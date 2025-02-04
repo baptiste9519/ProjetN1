@@ -25,7 +25,7 @@
    }
    
    header.hero span {
-    color: #00b894;
+    color: #255,255,255;
    }
    
    section {
@@ -51,8 +51,8 @@
    .stats {
     display: flex;
     justify-content: space-around;
-    background: #00cec9;
-    color: white;
+    background: #043C41;
+    color: #D6E31E;
     padding: 20px 0;
    }
    
@@ -60,17 +60,30 @@
     display: flex;
     justify-content: space-around;
    }
-   
+   .contact{
+    text-align: center;
+    
+   }
    .contact form {
     display: flex;
     flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
    }
+   .form {
+    background-color: #043C41;
+   }
+   .session.contact{
+    background-color: #043C41;
+   }
+   #image1{
+    border-radius: 35px;
+   }
    
    .contact form input, .contact form textarea, .contact form button {
     margin: 10px 0;
     padding: 10px;
+    background-color: #043C41;
    }
    
    footer {
