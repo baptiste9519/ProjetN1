@@ -15,13 +15,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: right;
     padding: 50px;
     color: white;
    }
-   
+ .hero .container, h1{
+    color: yellowgreen;
+    text-align: right;
+    right: 10px;
+ }
+ .hero .container{
+    box-sizing: content-box;
+ }
+ .pun{
+    color: black;
+    font-size: x-small;
+    
+ }
    header.hero h1 {
     font-size: 2.5rem;
+    text-align: right;
    }
    
    header.hero span {
@@ -64,19 +77,26 @@
     text-align: center;
     
    }
+   
    .contact form {
     display: flex;
     flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
    }
+   
    .form {
     background-color: #043C41;
    }
+
+   .contact{
+    background-color: #043C41;
+   }
+
    .session.contact{
     background-color: #043C41;
    }
-   #image1{
+   .image1{
     border-radius: 35px;
    }
    
@@ -91,4 +111,37 @@
     color: white;
     text-align: center;
     padding: 20px 0;
+   }
+   /*Barre de Navigation*/
+   .navbar{
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      position: fixed; /*Fixe le menu en haut*/
+      top: 0;
+      width: 100%;
+      z-index: 1000;   /*Priorité d'affichage*/
+      right: 0px;
+      justify-content: space-between; /* Logo à gauche, liens à droite */
+   }
+   .navlink{
+      list-style: none;
+      display: flex; /*Alignement Horizontal*/
+      justify-content: space-between; /*Espacement entre les liens*/
+      align-items: center;
+   }
+   .navlink li a:hover{
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      padding: 5px 15px;
+   }
+   .navlink li a:hover{
+      background-color: greenyellow; /*Couleur au survol*/
+      border-radius: 5px;
+   }
+   /*Ajustement pour le reste du contenu*/
+   .hero{
+      margin-top: 60px; /*Ajouter de l'espace sous le menu fixe*/
+      background: url('resources/rodion-kutsaev-049M_crau5k-unsplash\ 1.jpg') no-repeat center center;
    }
