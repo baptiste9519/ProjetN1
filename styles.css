@@ -20,9 +20,12 @@
     color: white;
    }
  .hero .container, h1{
-    color: yellowgreen;
     text-align: right;
-    right: 10px;
+    margin-top: 150px;
+    margin-left: auto;
+ }
+ .h1b{
+   color: #D5F31F;
  }
  .hero .container{
     box-sizing: content-box;
@@ -116,19 +119,21 @@
    .navbar{
       background-color: white;
       color: black;
-      padding: 10px 20px;
+      padding: 17px 20px;
       position: fixed; /*Fixe le menu en haut*/
       top: 0;
       width: 100%;
       z-index: 1000;   /*Priorité d'affichage*/
       right: 0px;
       justify-content: space-between; /* Logo à gauche, liens à droite */
+      display: flex;
    }
    .navlink{
       list-style: none;
       display: flex; /*Alignement Horizontal*/
       justify-content: space-between; /*Espacement entre les liens*/
-      align-items: center;
+      gap: 15px;
+      font-size: small;
    }
    .navlink li a:hover{
       color: white;
@@ -137,7 +142,7 @@
       padding: 5px 15px;
    }
    .navlink li a:hover{
-      background-color: greenyellow; /*Couleur au survol*/
+      background-color: green; /*Couleur au survol*/
       border-radius: 5px;
    }
    /*Ajustement pour le reste du contenu*/
