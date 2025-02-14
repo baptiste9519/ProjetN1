@@ -131,8 +131,7 @@
    .navlink{
       list-style: none;
       display: flex; /*Alignement Horizontal*/
-      justify-content: space-between; /*Espacement entre les liens*/
-      gap: 15px;
+      gap: 15px;/*Espacement entre les liens*/
       font-size: small;
    }
    .navlink li a:hover{
@@ -149,4 +148,39 @@
    .hero{
       margin-top: 60px; /*Ajouter de l'espace sous le menu fixe*/
       background: url('resources/rodion-kutsaev-049M_crau5k-unsplash\ 1.jpg') no-repeat center center;
+   }
+   .cisa{
+      background-color: #043C41;
+      color: white;
+      font-size: x-small;
+      display: flex;/*aligne les elements*/
+      justify-content: space-around;
+   }
+   .content{
+      color: white;
+      display: flex;
+      font-size: small;
+      justify-content: space-around;
+   }
+   .apropos{
+      border: solid;
+      border-radius: 10px;
+      padding: 10px;
+
+   }
+   a{
+      color: black;
+      text-decoration: none;
+   }
+   /*.about .proposnous{
+      display: flex;
+      max-height: fit-content;
+      display: contents;
+      border: 2px solid green
+   }*/
+   .about .vector{
+      display: flex;
+      max-height: fit-content;
+      border: 2px solid green;
+      position: relative;
    }
