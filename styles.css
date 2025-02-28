@@ -3,9 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-   body {
+   body, html {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    flex-wrap: wrap;
    }
    
    header.hero {
@@ -45,7 +46,7 @@
    }
    
    section {
-    padding: 40px 20px;
+    padding: 20px 20px;
    }
    
    .team, .services, .gallery {
@@ -62,6 +63,8 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
    }
    
    .stats {
@@ -89,7 +92,7 @@
    }
    
    .form {
-    background-color: #043C41;
+    background-color: #053b45;
    }
 
    .contact{
@@ -101,19 +104,25 @@
    }
    .image1{
     border-radius: 35px;
+    width: 500px;
+    height: 300px;
    }
    
    .contact form input, .contact form textarea, .contact form button {
     margin: 10px 0;
     padding: 10px;
     background-color: #043C41;
+    margin: 0px;
    }
    
    footer {
-    background: #2d3436;
+    background: #042328;
     color: white;
     text-align: center;
     padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
    }
    /*Barre de Navigation*/
    .navbar{
@@ -127,6 +136,7 @@
       right: 0px;
       justify-content: space-between; /* Logo à gauche, liens à droite */
       display: flex;
+      flex-wrap: wrap;
    }
    .navlink{
       list-style: none;
@@ -172,15 +182,106 @@
       color: black;
       text-decoration: none;
    }
-   /*.about .proposnous{
-      display: flex;
-      max-height: fit-content;
-      display: contents;
-      border: 2px solid green
-   }*/
    .about .vector{
-      display: flex;
-      max-height: fit-content;
-      border: 2px solid green;
-      position: relative;
+      /*display: flex;*/
+      border: 1px solid black;
+      width: 500px;
+      border-radius: 35px;  
    }
+   section.about {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 400px;
+   }
+   .vector.icons{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      
+   }
+   div.proposnous{
+      height: auto;
+      width: 50px;
+   }
+
+   section.about .vector .image1{
+      justify-content: space-between;
+      gap: 15px;
+   }
+   .gallery .gallery-images{
+      border-radius: 35px;
+   }
+   .icone{
+      display: flex;
+      justify-content: space-around;
+   }
+   .icons, p{
+      text-align: center;
+   }
+   .formleft{
+      display: flex;
+      gap: 30px;
+   }
+   .formright{
+      display: flex;
+      gap: 30px;
+   }
+   .contact input{
+      font-size: 20px;
+   }
+   .contact p{
+      color: white;
+   }
+   .contact h2{
+      color: greenyellow;
+   }
+   img {
+      border-radius: 30px;
+      width: 100%;
+  }
+  .reseaux{
+   display: flex;
+   flex-direction: row-reverse;
+   margin-left: 600px;
+  }
+  /*.message{
+   border-style: none;
+   height: 150px;
+  }*/
+  textarea{
+   border-style: none;
+   height: 150px;
+   width: auto;
+  }
+  .reseaux img{
+   width: 30px;
+   height: 30px;
+   margin-right: 20px;
+  }
+  .bouton .bleftright button{
+   border-radius: 100px;
+   background-color: black;
+   border: solid 2px;
+   width: 40px;
+   height: 40px;
+  }
+  .couleurb{
+   color: white;
+   font-size: large;
+  }
+  .bleftright{
+   display: flex;
+   justify-content: space-between;
+  }
+  .bouton .bleftright a:hover{
+   background-color: red;
+  }
+  .emoji{
+   flex-direction: column;
+   justify-content: space-between;
+   font-size: large;
+  }
+  .emonumloc{
+   display: flex;
+  }
