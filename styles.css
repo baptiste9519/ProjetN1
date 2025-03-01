@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
    body, html {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    flex-wrap: wrap;
+
+      font-family: "Montserrat", serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
    }
    
    header.hero {
@@ -81,7 +84,7 @@
    }
    .contact{
     text-align: center;
-    
+    background-color: #043C41;
    }
    
    .contact form {
@@ -93,10 +96,6 @@
    
    .form {
     background-color: #053b45;
-   }
-
-   .contact{
-    background-color: #043C41;
    }
 
    .session.contact{
@@ -112,13 +111,12 @@
     margin: 10px 0;
     padding: 10px;
     background-color: #043C41;
-    margin: 0px;
+    width: 100%;
    }
    
    footer {
     background: #042328;
     color: white;
-    text-align: center;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
@@ -183,26 +181,22 @@
       text-decoration: none;
    }
    .about .vector{
-      /*display: flex;*/
       border: 1px solid black;
       width: 500px;
-      border-radius: 35px;  
+      border-radius: 35px;
+      padding: 30px;  
    }
    section.about {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
-      gap: 400px;
+      margin-top: 20px;
    }
    .vector.icons{
       display: flex;
       text-align: center;
       justify-content: center;
       
-   }
-   div.proposnous{
-      height: auto;
-      width: 50px;
    }
 
    section.about .vector .image1{
@@ -228,7 +222,7 @@
       gap: 30px;
    }
    .contact input{
-      font-size: 20px;
+      font-size: 10px;
    }
    .contact p{
       color: white;
@@ -236,29 +230,37 @@
    .contact h2{
       color: greenyellow;
    }
-   img {
+   .services img {
       border-radius: 30px;
       width: 100%;
+      padding: 50px;
+      background-color: #f4f6f5;
   }
   .reseaux{
    display: flex;
    flex-direction: row-reverse;
-   margin-left: 600px;
+   margin-left: 900px;
   }
-  /*.message{
-   border-style: none;
-   height: 150px;
-  }*/
+  
+  .message{
+  border-bottom: solid 1px;
+  border-bottom-color: white;
+  width: 100%;
+  border-bottom-width: 2px;
+  }
+  
   textarea{
    border-style: none;
    height: 150px;
    width: auto;
   }
+  
   .reseaux img{
    width: 30px;
    height: 30px;
    margin-right: 20px;
   }
+  
   .bouton .bleftright button{
    border-radius: 100px;
    background-color: black;
@@ -266,22 +268,65 @@
    width: 40px;
    height: 40px;
   }
+  
   .couleurb{
    color: white;
    font-size: large;
   }
+  
   .bleftright{
    display: flex;
    justify-content: space-between;
   }
-  .bouton .bleftright a:hover{
-   background-color: red;
-  }
+  
   .emoji{
    flex-direction: column;
    justify-content: space-between;
    font-size: large;
   }
+  
   .emonumloc{
    display: flex;
   }
+  
+  .couleurbr{
+   color: yellow;
+   font-size: large;
+  }
+
+  input{
+   border-bottom: solid 1px;
+   border-bottom-color: white;
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   border-bottom-width: 2px;
+   width: 100%;
+  }
+
+.contact .mailb button{
+   background-color: #D5F31F;
+   border-radius: 100px;
+   width: 100px;
+   border: none;
+   float: right;
+   color: #053B44;
+}
+
+.gallery h2{
+   color: #029D5B;
+}
+
+.services h2{
+   color: #029D5B;
+}
+
+.gallery .gallery-images img{
+   border-radius: 30px;
+   width: 100%;
+   margin-top: 20px;
+}
+
+.gallery p{
+   margin-top: 10px;
+}
