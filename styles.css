@@ -363,6 +363,7 @@
   }
 
 
+
   @media (max-width: 400px){
 
    .icone img{
@@ -382,6 +383,18 @@
 
    .cisa div h2{
       font-size: 9px;
+   }
+   
+   .cisa{
+      gap: 5px;
+   }
+
+   .cisa .cisa2{
+      font-size: 7px;
+   }
+
+   .cisa div p{
+      font-size: 7px;
    }
   }
 
