@@ -9,33 +9,46 @@
       font-family: "Montserrat", serif;
       font-optical-sizing: auto;
       font-style: normal;
+      font-size: large;
    }
    
-   header.hero {
-    background: url('resources/rodion-kutsaev-049M_crau5k-unsplash\ 1.jpg') no-repeat center center/cover;
-    background-size: cover;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: right;
-    padding: 50px;
-    color: white;
+   header .hero {
+      background: url('resources/rodion-kutsaev-049M_crau5k-unsplash\ 1.jpg') no-repeat center center/cover;
+      background-size: cover;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: right;
+      padding: 50px;
+      color: white;
+      width: 100vw;
+
+   }
+
+   .herolink{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10;
    }
  .hero .container, h1{
-    text-align: right;
     margin-top: auto;
     margin-left: auto;
+    font-size: 2rem;
  }
  .h1b{
    color: #D5F31F;
+
  }
  /*.hero .container{
     box-sizing: content-box;
  }*/
  .pun{
     color: black;
-    font-size: x-small;
+    font-size: smaller;
     
  }
    header.hero h1 {
@@ -238,7 +251,6 @@
   .reseaux{
    display: flex;
    flex-direction: row-reverse;
-   /*margin-left: 900px;*/
   }
   
   .message{
@@ -362,6 +374,14 @@
    text-align: left;
   }
 
+  .bouton .bleftright button{
+   border-radius: 50px;
+   background-color: black;
+   color: yellow;
+   border-color: black;
+   
+  }
+
 
 
   @media (max-width: 400px){
@@ -399,11 +419,12 @@
   }
 
 
-@media (max-width:750px){
+@media (max-width:700px){
    .menu .navlink{    
       flex-direction: column;
       display: none;
    }
+
    .burger {
       display: flex; /* Afficher le burger */
       background-color: #005907;
@@ -440,43 +461,55 @@
       margin: 0px 5px;
 }
 
-.team, .team-members, h2, h3, p, .member{
+   .team, .team-members, h2, h3, p, .member{
    font-size: 10px;
 }
 
-.gallery.cisa.emonumloc{
+   .gallery.cisa.emonumloc{
    padding-top: 20px;
 }
 
-.services.service-list{
-   gap: 10px;
+   .services.service-list{
+      gap: 10px;
 }
 
-.about .proposnous{
-   width: auto;
+   .about .proposnous{
+      width: auto;
 }
 
-.about .vector{
-   width: 100%;
+   .about .vector{
+      width: 100%;
 }
 
-.about .icons{
-   width: auto;
+   .about .icons{
+      width: auto;
 }
 
-.icone img{
-   flex-wrap: wrap;
+   .icone img{
+      flex-wrap: wrap;
 }
 
-.cisa .emonumloc{
-   font-size: 7px;
+   .cisa .emonumloc{
+      font-size: 7px;
 }
 
-.cisa .emoji{
-   font-size: 7px;
+   .cisa .emoji{
+      font-size: 7px;
 }
-.contact .mailb button{
-   font-size: 7px;
+   .contact .mailb button{
+      font-size: 7px;
+}
+
+   .bouton .bleftright button{
+      height: 30px;
+      width: 30px;
+}
+   .hero .container h1{
+      font-size: small;
+}
+
+header .hero{
+   height: 30vh;
 }
 
 }
