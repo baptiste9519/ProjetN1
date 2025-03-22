@@ -7,7 +7,6 @@
    body, html {
 
       font-family: "Montserrat", serif;
-      font-optical-sizing: auto;
       font-style: normal;
       font-size: large;
    }
@@ -43,9 +42,7 @@
    color: #D5F31F;
 
  }
- /*.hero .container{
-    box-sizing: content-box;
- }*/
+
  .pun{
     color: black;
     font-size: smaller;
@@ -54,10 +51,6 @@
    header.hero h1 {
     font-size: 4vw;
     text-align: right;
-   }
-   
-   header.hero span {
-    color: #255,255,255;
    }
    
    section {
@@ -88,6 +81,7 @@
     background: #043C41;
     color: #D6E31E;
     padding: 20px 0;
+    text-align: center;
    }
    
    .services .service-list {
@@ -172,7 +166,7 @@
    .cisa{
       background-color: #043C41;
       color: white;
-      font-size: x-small;
+      font-size: 12px;
       display: flex;/*aligne les elements*/
       justify-content: space-around;
    }
@@ -220,7 +214,10 @@
    }
    .icone{
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: baseline;
    }
    .icons, p{
       text-align: center;
@@ -342,10 +339,6 @@
    margin-top: 10px;
 }
 
-/*footer, p{
-   text-align: left;
-}*/
-
 .team h2{
    color: #029D5B;
    padding-bottom: 10px;
@@ -378,8 +371,7 @@
    border-radius: 50px;
    background-color: black;
    color: yellow;
-   border-color: black;
-   
+   border-color: white;
   }
 
 
@@ -407,14 +399,28 @@
    
    .cisa{
       gap: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
    }
 
-   .cisa .cisa2{
+  /* .cisa .cisa2{
       font-size: 7px;
-   }
+   }*/
 
    .cisa div p{
-      font-size: 7px;
+      font-size: 6px;
+   }
+   
+   .cisa .cisa2 h2{
+      font-size: 8px;
+   }
+
+   .cisa .numloc{
+      font-size: 6px;
+   }
+
+   .cisa .emoji{
+      margin-top: -8px;
    }
   }
 
@@ -462,7 +468,7 @@
 }
 
    .team, .team-members, h2, h3, p, .member{
-   font-size: 10px;
+   font-size: 20px;
 }
 
    .gallery.cisa.emonumloc{
@@ -489,15 +495,15 @@
       flex-wrap: wrap;
 }
 
-   .cisa .emonumloc{
-      font-size: 7px;
+  /* .cisa .emonumloc{
+      font-size: 9px;
 }
 
    .cisa .emoji{
-      font-size: 7px;
-}
+      font-size: 8px;
+}*/
    .contact .mailb button{
-      font-size: 7px;
+      font-size: 9px;
 }
 
    .bouton .bleftright button{
@@ -505,11 +511,31 @@
       width: 30px;
 }
    .hero .container h1{
-      font-size: small;
+      font-size: 20px;
 }
 
 header .hero{
    height: 30vh;
+}
+
+.team-members{
+   flex-wrap: wrap;
+}
+
+body html{
+   font-size: medium;
+}
+
+footer p{
+   font-size: 8px;
+}
+
+.cisa div p{
+   font-size: 8px;
+}
+
+.cisa .cisa2 h2{
+   font-size: 10px;
 }
 
 }
